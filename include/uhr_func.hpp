@@ -841,34 +841,34 @@ static void countdownToMidnight() {
     Serial.printf("Count down: %d\n", 60 - _sekunde);
     switch (_sekunde) {
     case 50:
-        usedUhrType->show(zehn);
+        uhrzeit |= (1u << ZEHN);
         break;
     case 51:
-        usedUhrType->show(h_neun);
+        uhrzeit |= (1u << H_NEUN);
         break;
     case 52:
-        usedUhrType->show(h_acht);
+        uhrzeit |= (1u << H_ACHT);
         break;
     case 53:
-        usedUhrType->show(h_sieben);
+        uhrzeit |= (1u << H_SIEBEN);
         break;
     case 54:
-        usedUhrType->show(h_sechs);
+        uhrzeit |= (1u << H_SECHS);
         break;
     case 55:
-        usedUhrType->show(fuenf);
+        uhrzeit |= (1u << FUENF);
         break;
     case 56:
-        usedUhrType->show(h_vier);
+        uhrzeit |= (1u << H_VIER);
         break;
     case 57:
-        usedUhrType->show(h_drei);
+        uhrzeit |= (1u << H_DREI);
         break;
     case 58:
-        usedUhrType->show(h_zwei);
+        uhrzeit |= (1u << H_ZWEI);
         break;
     case 59:
-        usedUhrType->show(eins);
+        uhrzeit |= (1u << EINS);
         break;
     default:
         break;
